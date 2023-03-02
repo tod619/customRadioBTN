@@ -16,3 +16,44 @@
     align-items: center;
     justify-content: center;
 }
+
+.option {
+    width: 400px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.option label {
+    font-family: 'Josefin Slab', serif;
+    font-size: 3.75rem;
+    cursor: pointer;
+}
+
+.option label::after {
+    content: "";
+    position: absolute;
+    right: 15%;
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 5px solid #0aac83;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
+
+.option label::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 17.5%;
+    transform: translateY(-50%);
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #0aac83;
+    border-radius: 50%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+}
