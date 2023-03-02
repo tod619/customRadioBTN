@@ -20,12 +20,15 @@
 .option {
     width: 400px;
     height: 100px;
-    background-color: #ccc;
     margin: 20px;
     padding: 20px;
     display: flex;
     align-items: center;
     position: relative;
+}
+
+.option input {
+    display: none;
 }
 
 .option label {
@@ -56,4 +59,10 @@
     background-color: #0aac83;
     border-radius: 50%;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.option input:checked ~ label::before {
+    opacity: 1;
 }
